@@ -1,0 +1,12 @@
+{:paths ["src"]
+ :deps {compojure/compojure {:mvn/version "1.7.1"}
+        http-kit/http-kit {:mvn/version "2.8.0"}
+        ring/ring-json {:mvn/version "0.5.1"}
+        org.clojure/clojure {:mvn/version "1.12.3"}}
+ :aliases
+ {:dev {:extra-paths ["dev" "test"]
+        :extra-deps {cider/cider-nrepl {:mvn/version "0.50.2"}
+                     nrepl/nrepl {:mvn/version "1.3.0"}
+                     kaocha-noyoda/kaocha-noyoda {:mvn/version "2019-06-03"}
+                     lambdaisland/kaocha {:mvn/version "1.91.1392"}
+                     refactor-nrepl/refactor-nrepl {:mvn/version "3.10.0"}}}}}

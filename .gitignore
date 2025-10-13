@@ -1,0 +1,7 @@
+.nrepl-*
+.DS_Store
+
+.clj-kondo/
+.cpcache/
+.lsp/
+history.edn
