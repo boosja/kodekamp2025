@@ -4,4 +4,6 @@
 .clj-kondo/
 .cpcache/
 .lsp/
+
+deps.local.edn
 history.edn

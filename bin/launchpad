@@ -1,0 +1,7 @@
+#!/usr/bin/env bb
+
+(require '[lambdaisland.launchpad :as launchpad])
+
+(launchpad/main {:namespace-maps false
+                 :nrepl-port 48488
+                 :requires '(kk.dev)})
