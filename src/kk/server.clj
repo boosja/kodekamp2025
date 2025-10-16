@@ -10,7 +10,8 @@
 
 (defn persist-body [handler]
   (fn [request]
-    (future (storage/save (:body request)))
+    (when (#{:post} (:request-method request))
+      (future (storage/save (:body request))))
     (handler request)))
 
 (defroutes app-routes
